@@ -1,5 +1,6 @@
 # Project: SurveyForm
 Link: [Build a Survey Form](https://www.freecodecamp.org/learn/responsive-web-design/responsive-web-design-projects/build-a-survey-form)
+
 Certificate: Responsive Web Design
 
 ## README
@@ -7,9 +8,10 @@ Roomate Match Survey is a survey form to collect an individual's living habits. 
 
 ## Project Criteria
 Build a survey form using HTML and plain CSS. Fullfill the below user stories:
+
 (full stories available in *Link*)
 1. title in h1 sized text with id="title".
-2. short explanation in <p> sized text with id="description".
+2. short explanation in p sized text with id="description".
 3. form with id="survey-form".
 4. inside the form element, require to enter name in a field with id="name".
 5. inside the form element, require to enter an email in a field with id="email".
