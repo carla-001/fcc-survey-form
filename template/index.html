@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- metadata elements -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="/static/style.css">
+    <title>Survey Form</title>
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <![endif]--> 
+</head>
+
+<body>
+    <!-- survey form header -->
+    <header>
+        <h1 id="title">Survey Form</h1>
+    </header>
+
+    <main>
+        <form action="" id="survey-form">
+            <!-- form title and requirements -->
+            <h3>Roomate Match Survey</h3>
+            <p id="description">
+                Let us help you find your ideal roommate<br>
+                <abbr title="required">(*required field)</abbr>
+            </p>
+            <!-- form label and inputs -->
+            <section>
+                <div id="question-block">
+                    <label id="name-label" type="text-num" for="name">Name: <abbr title="required" aria-label="required">*</abbr></label>
+                    <input id="name" type="text" name="name" placeholder="Enter your name" required>
+                </div>
+
+                <div id="question-block">
+                    <label id="email-label" type="text-num" for="email">Email: <abbr title="required" aria-label="required">*</abbr></label>
+                    <input id="email" type="email" name="email" placeholder="Enter your email" required>
+                </div>
+
+                <div id="question-block">
+                    <label id="number-label" type="text-num" for="number">Age: <abbr title="required" aria-label="required">*</abbr></label>
+                    <input id="number" type="number" name="number" min="1" max="130" maxlength="3" placeholder="Age" required>
+                </div>
+
+                <div id="question-block">
+                    <label for="study">Field of study or profession:</label>
+                    <select id="dropdown" name="study">
+                        <option value="" disabled selected>select from dropdown</option>
+                        <option value="Formal sciences">Formal sciences</option>
+                        <option value="humanities">Humanities</option>
+                        <option value="natural sciences">Natural sciences</option>
+                        <option value="social sciences">Social sciences</option>
+                        <option value="social sciences">Other/ Applied Profession</option>
+                    </select>
+                </div>
+
+                <div id="question-block">
+                    <label id="rm-gender label" for="roommate-gender">Roommate's gender preference:</label>
+                    <div id="radio-input">
+                        <input id="roommate-gender" type="radio" name="roommate-gender" value="no_preference" checked>No preference<br>
+                        <input id="roommate-gender" type="radio" name="roommate-gender" value="male">Male<br>
+                        <input id="roommate-gender" type="radio" name="roommate-gender" value="female">Female<br>
+                    </div>
+                </div>
+
+                <div id="question-block">
+                    <label id="arrangement-label" for="arrangement">What type of living arrangement are you looking for?</label>
+                    <div id="checkbox-input">
+                        <input id="arrangement" type="checkbox" name="arrangement" value="suit room">suit</input><br>
+                        <input id="arrangement" type="checkbox" name="arrangement" value="single room">single</input><br>
+                        <input id="arrangement" type="checkbox" name="arrangement" value="double">double</input><br>
+                        <input id="arrangement" type="checkbox" name="arrangement" value="triple">triple</input><br>
+                    </div>
+                </div>
+
+                <div id="question-block">
+                    <label id="habits-label" for="habits">Describe your daily living habits and hobbies:<br>(250 max characters)</label>
+                    <textarea id="habits" name="habits" maxlength="250" placeholder="250 max characters"></textarea>
+                </div>
+            </section>
+            <!-- form submit button -->
+            <button id="submit" type="submit">Submit Form</button>
+        </form>
+    </main>
+    <!-- page footer -->
+    <footer>Carla-001®2020</footer>
+</body>
+
+</html>
